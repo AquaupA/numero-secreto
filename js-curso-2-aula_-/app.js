@@ -1,6 +1,6 @@
 listaNumSort = [];
 function GerarNum() {
-    let numGerado = parseInt(Math.random() * 10 + 1);
+    let numGerado = parseInt(Math.random() * 100 + 1);
     let numElementosLista = listaNumSort.length;
 
     if(numElementosLista == 3) {
@@ -36,12 +36,12 @@ function reiniciarJogo() {
     Limparcampo();
     tries = 1;
     Textotela('h1', 'Joguinho do número!');
-    Textotela('p', 'Escolha um número entre 1 e 10');
+    Textotela('p', 'Escolha um número entre 1 e 100');
     document.getElementById('reiniciar').setAttribute('disabled', true);
 }
 
 Textotela('h1', 'Joguinho do número!');
-Textotela('p', 'Escolha um número entre 1 e 10');
+Textotela('p', 'Escolha um número entre 1 e 100');
 
 function verificarChute() {
     let chute = document.querySelector('input').value;
